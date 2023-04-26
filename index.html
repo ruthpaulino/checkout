@@ -82,7 +82,13 @@
         <p class="card-text">G</p>
       
         <p class="compra-title">Preço:</p>
-        <p class="card-text"> R$ 69,90</p>      </div>
+        <p class="card-text"> R$ 69,90</p>     
+        <label for="qtd" class="compra-title"> Selecione a quantidade</label> 
+        <input type="number" name="qtd" id="qtd" maxlength="100" onclick="getValue()" required/>
+        <p id="result"> </p>
+
+      
+      </div>
     </div>
 
   </div>
@@ -139,7 +145,7 @@
    
           <label for="vld">Validade</label>
           <input type="date" name="vld" id="vld" required/>
-          <input type="submit" name="button" id="button" value="Confirmar Pedido"/> 
+          <input type="submit" href="#" name="button" id="button" value="Confirmar Pedido"/> 
    
          </form>
    
@@ -158,8 +164,6 @@
 
 </body>
 
-
-
-
+</html>
 
   
