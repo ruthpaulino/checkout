@@ -6,94 +6,92 @@
         <meta name="author" content="Ruth">
         <meta name="description" content="Projeto Uptech">
         <meta name="keywords" content="checkout">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto+Condensed&family=Vina+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/estilo.css">
 
         <script src="https://kit.fontawesome.com/dc3501a193.js" crossorigin="anonymous"></script>
     </head>
 
+   
 
     <body>
 
 
-<header>
+      <header>
+
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Feminino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Masculino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Infantil</a>
+                        </li>
+  
+                    </ul>
+                </div>
+  
+            </div>
+        </nav>
+  
+    </header>
 
 
-  <nav class=" nav nav-bar justify-content-end">
 
+<div class="container">
 
-    <div class="nav-list">
-    <ul class="nav-bar">
-        <li class="nav-item "> <a class="nav-link" href="#"> Feminino </a> </li>
-        <li class="nav-item "> <a class="nav-link" href="#">  Masculino</a> </li>
-        <li class="nav-item "> <a class="nav-link" href="#"> Infantil </a> </li>
-    </ul> 
-    </div>
+  <div class="banner">
 
-
-    <div class="mobile-menu-icon">
-        <button onclick="menuShow()"><i class="fa-2x fa-solid fa-bars"></i></button>
-    </div>
-
-</nav>
-
-
-<div class="mobile-menu">
-
-  <ul class="nav-bar">
-    <li class="nav-item "> <a class="nav-link" href="#"> Feminino </a> </li>
-    <li class="nav-item "> <a class="nav-link" href="#">  Masculino</a> </li>
-    <li class="nav-item "> <a class="nav-link" href="#"> Infantil </a> </li>
-</ul> 
-
-    </div>
-
-
-   
-
-</header>
-
-<div class="banner container">
-  <h1>Ótima escolha!</h1>
-  <p>Obrigado por comprar na <strong>Closet XXI</strong>  Preencha seus dados para efetivar a compra</p>
+  <h2>ótima escolha!</h2>
+  
+  <p>Obrigado por comprar na Closet XXI Preencha seus dados para efetivar a compra.</p>
+</div>
 </div>
 
+<div class="container-fluid">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
 
+    <div class="card">
+      <img src="imagens/img1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
 
-  <div class="row">
+        <legend> Dados Pessoais </legend>
+        <hr>
+        <p class="compra-title">Produto:</p>
+        <p class="card-text">Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</p>
+      
+        <p class="compra-title"> Cor:</p>
+        <p class="card-text">Branco</p>
+      
+        <p class="compra-title">Tamanho:</p>
+        <p class="card-text">G</p>
+      
+        <p class="compra-title">Preço:</p>
+        <p class="card-text"> R$ 69,90</p>      </div>
+    </div>
 
-  <section class="cards"> 
+  </div>
 
-    <article class="compra col">
-    
-      <h2>Sua compra</h2>
-    
-      <img class="camisa" src="imagens/img1.jpg" alt="camisa simpsons">
-    
-      <p class="compra-title">Produto:</p>
-      <p class="compra-text">Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</p>
-    
-      <p class="compra-title"> Cor:</p>
-      <p class="compra-text">Branco</p>
-    
-      <p class="compra-title">Tamanho:</p>
-      <p class="compra-text">G</p>
-    
-      <p class="compra-title">Preço:</p>
-      <p class="compra-text"> R$ 69,90</p>
-    
-    </article>
-    
-    </section>
-    
-    
-    <section class="cards">
-    
-    
-      <article class="dados col">
-    
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
         <fieldset>
-    
+
           <legend> Dados Pessoais </legend>
     
           <form action="#" method="post">
@@ -107,57 +105,61 @@
     
             <label for="cpf"> CPF </label>
             <input type="text" name="cpf" id="cpf" minlength="11" maxlength="14"  required/>
-    
-            <input type="checkbox" name="news" id="news" checked> 
-            <p class="text-news"> Quero receber a news letter da rchlo!</p>
-    
+            <labe for="news"> Quero receber a news letter da rchlo!</labe>
+            <input class="news" type="checkbox" name="news" id="news" checked> 
+            
     
         </fieldset>
     
-      </article>
-    
-    </section>
-    
-    <section class="cards">
-    
-        <article class="pagamento col">
-          <fieldset>
-    
-           <legend> Cartão de crédito </legend>
-    
-    
-    
-            <label for="cvv"> Número - CVV </label>
-            <input type="text" name="cvv" id="cvv"  maxlength="3" minlength="3" placeholder="123" required/>
-    
-            <label> Bandeira </label>
-            <select name="uf" required>
-    
-                <option value=""> Selecione uma opção </option>
-                <option value="MC"> MasterCard </option>
-                <option value="VS"> Visa </option>
-                <option value="AE"> American Express </option>
-                
-            </select>
-    
-           <label for="vld">Validade</label>
-           <input type="date" name="vld" id="vld" required/>
-           <input type="submit" name="button" id="button" value="Confirmar Pedido"/> 
-    
-          </form>
-    
-          </fieldset>
-
-      </article>
-
-    </section>
-
+      </div>
+    </div>
   </div>
 
-<footer class="rodape">
-  <p>Copyright &copy; Ruth Paulino</p> 
-</footer>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <fieldset>
 
-<script src="JS/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    </body>
+          <legend> Cartão de crédito </legend>
+   
+   
+   
+           <label for="cvv"> Número - CVV </label>
+           <input type="text" name="cvv" id="cvv"  maxlength="3" minlength="3" placeholder="123" required/>
+   
+           <label> Bandeira </label>
+           <select name="cart" required>
+   
+               <option value=""> Selecione uma opção </option>
+               <option value="MC"> MasterCard </option>
+               <option value="VS"> Visa </option>
+               <option value="AE"> American Express </option>
+               
+           </select>
+   
+          <label for="vld">Validade</label>
+          <input type="date" name="vld" id="vld" required/>
+          <input type="submit" name="button" id="button" value="Confirmar Pedido"/> 
+   
+         </form>
+   
+         </fieldset>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</div>
+<footer class="main-footer">
+  <p>Copyright &copy; Closet XXI</p> 
+</footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+
+
+  
