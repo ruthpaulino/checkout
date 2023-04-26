@@ -1,66 +1,71 @@
-
-body{
+body {
 
     font-family: 'Vina Sans', cursive;
     background-color: rgb(192, 197, 202);
-margin: auto;
-padding: 0;
+    margin: auto;
+    padding: 0;
 
 
 }
 
-nav{
-  
+nav {
+
     background-color: black;
     margin-bottom: 2rem;
-  
+
 }
 
 
 
-.nav-link{
+.nav-link {
 
-    color:blueviolet;
+    color: blueviolet;
     font-size: 1.7rem;
     letter-spacing: 2px;
 
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
 
     color: rgb(192, 197, 202);
 }
 
 
-.banner p{
+.banner p {
 
-font-size:22px ;
+    font-size: 22px;
 
 }
 
 
-.col{
+.col {
 
     margin-bottom: 2rem;
 
 }
 
-.card{
+.card {
 
     font-family: 'Roboto Condensed', sans-serif;
 }
-.card img{
+
+.card img {
 
     height: 22rem;
 
 }
 
-.compra-title{
+.compra-title {
 
     font-weight: bold;
 }
 
-#nome, #email, #cpf, #cvv, #vld, select{
+#nome,
+#email,
+#cpf,
+#cvv,
+#vld,
+select {
 
     display: block;
     width: 95%;
@@ -70,7 +75,7 @@ font-size:22px ;
 
 }
 
-#qtd{
+#qtd {
 
     border-radius: 5px;
     margin-top: 0.5rem;
@@ -78,7 +83,7 @@ font-size:22px ;
     width: 10%;
 }
 
-.main-footer{
+.main-footer {
 
     background-color: black;
     color: blueviolet;
@@ -92,7 +97,7 @@ font-size:22px ;
 }
 
 
-#button{
+#button {
 
     background-color: rgb(71, 71, 248);
     border: none;
